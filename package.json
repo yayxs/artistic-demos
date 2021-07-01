@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/yayxs/css-learn/issues"
   },
-  "homepage": "https://github.com/yayxs/css-learn#readme"
+  "homepage": "https://github.com/yayxs/css-learn#readme",
+  "devDependencies": {
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0"
+  }
 }

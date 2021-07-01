@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  section {
+    width: 500px;
+    height: 100px;
+    border: 1px solid;
+    display: flex;
+
+    /* align-items: stretch; */
+
+    /* align-items: flex-start; */
+    align-items: flex-end;
+
+    /* justify-content: space-around; */
+    justify-content: space-between;
+  }
+
+  section div {
+    width: 50px;
+
+    /* height: 40px; */
+    background-color: #eee;
+  }
+
+  section div:first-child {
+    align-self: flex-start;
+  }
+
+  section div:last-child {
+    order: -1;
+  }
+    </style>
+</head>
+<body>
+    <section>
+        <div>V</div>
+        <div>A</div>
+        <div>S</div>
+        <div>T</div>
+    </section>
+</body>
+</html>
