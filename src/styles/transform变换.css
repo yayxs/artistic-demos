@@ -1,0 +1,22 @@
+.box div {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 0.2em;
+}
+
+.xz {
+  transform: rotate(30deg);
+}
+
+.py {
+  transform: translate(40px, 20px);
+}
+
+.sf {
+  transform: scale(0.8);
+}
+
+.qx {
+  transform: skew(15deg);
+}
