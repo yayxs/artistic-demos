@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+      }
+      nav h2 {
+        display: table-cell;
+        outline: 1px solid #fff;
+        background-color: skyblue;
+      }
+      .cont {
+        width: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        width: min-content;
+      }
+      .father {
+        /* overflow: hidden; */
+        height: 400px;
+        overflow: auto;
+      }
+      .father::after {
+        content: "";
+        display: block;
+        height: 800px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <nav>
+        <h2>sasa</h2>
+        <h2>12122</h2>
+        <h2>121212</h2>
+      </nav>
+    </div>
+
+    <p class="cont">
+      层级最近的滚动元素因此，如果黏性定位元素的某个祖先元素
+      的overflow属性值不是visible，那么窗体滚动的时候就不会有黏
+      性定位效果，例如因此，如果黏性定位元素的某个祖先元素
+      的overflow属性值不是visible，那么窗体滚动的时候就不会有黏
+      性定位效果，例如因此，如果黏性定位元素的某个祖先元素
+      的overflow属性值不是visible，那么窗体滚动的时候就不会有黏 性定位效果，例如
+    </p>
+  </body>
+</html>
