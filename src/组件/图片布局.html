@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul li img {
+        width: 50px;
+        object-fit: cover;
+      }
+      img.error {
+        position: relative;
+        display: inline-block;
+      }
+      img.error::before {
+        content: "";
+        /** 定位代码 **/
+        background: url("https://avatars.githubusercontent.com/u/50107464?s=40&v=4");
+      }
+      img.error::after {
+        content: attr(alt);
+        /** 定位代码 **/
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="g-container">
+      <li>
+        <img
+          src=""
+          alt="图片描述"
+          width="50px"
+          height="50px"
+          onerror="this.classList.add('error');"
+        />
+        <p>图片描述</p>
+      </li>
+    </ul>
+    <script>
+      let url = `https://avatars.githubusercontent.com/u/50107464?s=40&v=4`;
+    </script>
+  </body>
+</html>

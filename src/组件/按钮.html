@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section div {
+        margin: 8px auto;
+        width: 160px;
+        height: 64px;
+        flex-shrink: 0;
+      }
+      section div:first-child {
+        background-color: aquamarine;
+        border-radius: 64px;
+      }
+      section div:nth-child(2) {
+        background-color: aquamarine;
+      }
+      section div:nth-of-type(3) {
+        position: relative;
+        width: 160px;
+        height: 64px;
+      }
+      section div:nth-of-type(3)::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: bisque;
+        transform: skewX(15deg);
+      }
+      section div:nth-child(4) {
+        background: linear-gradient(
+              -135deg,
+              transparent 22px,
+              #04e6fb 22px,
+              #65ff9a 100%
+            )
+            top right,
+          linear-gradient(-45deg, transparent 22px, #04e6fb 22px, #65ff9a 100%)
+            bottom right;
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+  </body>
+</html>

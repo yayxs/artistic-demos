@@ -6,24 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .box {
-        height: 200px;
-        width: 500px;
-        border: 1px solid green;
+      main div:first-of-type {
+        width: 100px;
+        height: 100px;
+        background-image: url("https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg");
       }
-      .none {
-        background-image: url("./Snipaste_2022-01-14_10-43-10.png");
+      main div:nth-of-type(2) {
+        width: 100px;
+        height: 100px;
+        background-image: url("https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"),
+          url("https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg");
       }
     </style>
   </head>
   <body>
-    <h3>background-image: none | image</h3>
-    <div class="box none"></div>
-    <div class="box url"></div>
-    <div class="box gradient"></div>
-    <div class="box image"></div>
-    <div class="box image-set"></div>
-    <div class="box cross-fade"></div>
-    <div class="box paint"></div>
+    <h3>background-image 属性用于为一个元素设置一个或者多个背景图像</h3>
+    <main>
+      <div></div>
+      <div></div>
+      <div>
+        <p class="catsandstars">
+          This paragraph is full of cats<br />and stars.
+        </p>
+        <p>This paragraph is not.</p>
+        <p class="catsandstars">
+          Here are more cats for you.<br />Look at them!
+        </p>
+        <p>And no more.</p>
+      </div>
+    </main>
   </body>
 </html>
