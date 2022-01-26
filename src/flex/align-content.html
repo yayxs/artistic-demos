@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* CSS 的 align-content 属性设置了浏览器如何沿着弹性盒子布局的纵轴和网格布局的主轴在内容项之间和周围分配空间。 */
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      #container {
+        width: 230px;
+        height: 270px;
+        /* 所有行从容器的起始边缘开始填充 */
+        align-content: flex-start;
+        /* align-content: end; */
+        /* align-content: flex-start; */
+        /* align-content: flex-end; */
+        /* align-content: space-between; */
+        /* align-content: space-around; */
+        /* align-content: space-evenly; */
+
+        align-content: stretch;
+
+        background-color: #8c8c8c;
+      }
+      div > div {
+        box-sizing: border-box;
+        border: 2px solid #8c8c8c;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #item1 {
+        background-color: antiquewhite;
+        min-height: 10px;
+      }
+      #item2 {
+        background-color: blueviolet;
+        min-height: 20px;
+      }
+      #item3 {
+        background-color: chocolate;
+        min-height: 30px;
+      }
+      #item4 {
+        background-color: darkcyan;
+        min-height: 40px;
+      }
+      #item5 {
+        background-color: fuchsia;
+        min-height: 50px;
+      }
+      #item6 {
+        background-color: goldenrod;
+        min-height: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container" class="flex">
+      <div id="item1">1</div>
+      <div id="item2">2</div>
+      <div id="item3">3</div>
+      <div id="item4">4</div>
+      <div id="item5">5</div>
+      <div id="item6">6</div>
+    </div>
+  </body>
+</html>

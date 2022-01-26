@@ -1,0 +1,52 @@
+/* 盒模型重设 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 移除margin */
+* {
+  margin: 0;
+}
+
+/* 基于百分比的 height */
+html,
+body {
+  height: 100%;
+}
+
+/* 更改 line-height */
+body {
+  line-height: 1.5;
+}
+
+/* 更改媒体元素的默认值 */
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 表单控件的字体继承 */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 文本换行 */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}

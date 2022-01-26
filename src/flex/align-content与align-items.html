@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flex {
+        display: flex;
+        width: 500px;
+        height: 500px;
+        border: 2px solid #eee;
+        /* align-items: center; */
+        align-content: center;
+        flex-wrap: wrap; /* 使flex容器一行放不下子项换行*/
+      }
+      .flex div {
+        width: 100px;
+        margin: 5px;
+      }
+      .i1 {
+        background-color: #ffb685;
+        height: 130px;
+      }
+      .i2 {
+        background-color: #fff7b1;
+        width: 120px;
+        height: 50px;
+      }
+      .i3 {
+        background-color: #b1ffc8;
+        height: 100px;
+      }
+      .i4 {
+        background-color: #b1ccff;
+        height: 60px;
+      }
+      .i5 {
+        background-color: #c8b1ff;
+        height: 40px;
+      }
+      .i6 {
+        background-color: #ffb1e5;
+        height: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="i1">1</div>
+      <div class="i2">2</div>
+      <div class="i3">3</div>
+      <div class="i4">4</div>
+      <div class="i5">5</div>
+      <div class="i6">5</div>
+    </div>
+  </body>
+</html>

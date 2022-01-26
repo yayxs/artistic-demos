@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        /* 它只有在 display 属性设置成 -webkit-box 或者 -webkit-inline-box 并且 -webkit-box-orient (en-US) 属性设置成 vertical时才有效果 */
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        width: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      一行文字一行文字一行文字一行文字一行文字一行文字一行文字一行文字一行文字一行文字一行文字一行文字一行文字一行文字一行文字一行文字一行文字一行文字一行文字一行文字一行文字一行文字一行文字
+    </p>
+  </body>
+</html>

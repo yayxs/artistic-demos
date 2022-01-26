@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../styles/custom-reset.css" /> -->
+    <style>
+      /* 盒模型重设 */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      /* 移除margin */
+      * {
+        margin: 0;
+      }
+
+      /* 基于百分比的 height */
+      html,
+      body {
+        height: 100%;
+      }
+
+      /* 更改 line-height */
+      body {
+        line-height: 1.5;
+      }
+
+      /* 更改媒体元素的默认值 */
+
+      img,
+      picture,
+      video,
+      canvas,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+
+      /* 表单控件的字体继承 */
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      }
+
+      /* 文本换行 */
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        overflow-wrap: break-word;
+      }
+
+      main {
+        background-color: aliceblue;
+        min-height: 100%;
+      }
+      .img-wrap {
+        border: 1px solid;
+        width: 100px;
+      }
+
+      .parent {
+        width: 200px;
+      }
+      .son {
+        width: 100%;
+        border: 6px solid pink;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="img-wrap">
+        <img src="https://yayxs.github.io/avatar.jpg" alt="" />
+      </div>
+    </main>
+  </body>
+</html>
