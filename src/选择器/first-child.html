@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p:first-child {
+        color: pink;
+      }
+      ul li:first-child {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>1div1p(pink)</p>
+      <p>1div2p</p>
+    </div>
+
+    <div>
+      <h2>2div1h2</h2>
+      <p>2div1p</p>
+    </div>
+    <ul>
+      <li>Item 1(red)</li>
+      <li>Item 2</li>
+      <li>
+        Item 3
+        <ul>
+          <li>Item 3.1(red)</li>
+          <li>Item 3.2</li>
+          <li>Item 3.3</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

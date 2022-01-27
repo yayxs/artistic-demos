@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        height: 900px;
+      }
+      div img {
+        width: 120px;
+        height: 80px;
+        border: 1px solid red;
+        margin-bottom: 5px;
+      }
+      div > img:nth-of-type(1) {
+        object-fit: fill;
+      }
+      div > img:nth-of-type(2) {
+        object-fit: contain;
+      }
+      div > img:nth-of-type(3) {
+        object-fit: cover;
+      }
+      div > img:nth-of-type(4) {
+        object-fit: scale-down;
+      }
+      div > img:nth-of-type(5) {
+        object-fit: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- https://yayxs.github.io/avatar.jpg -->
+    <div>
+      <img src="https://yayxs.github.io/avatar.jpg" />
+
+      <img src="https://yayxs.github.io/avatar.jpg" />
+
+      <img src="https://yayxs.github.io/avatar.jpg" />
+
+      <img src="https://yayxs.github.io/avatar.jpg" />
+
+      <img src="https://yayxs.github.io/avatar.jpg" class="cover" />
+      <!-- 
+      <img src="https://yayxs.github.io/avatar.jpg" />
+
+      <img src="https://yayxs.github.io/avatar.jpg" />
+
+      <img src="https://yayxs.github.io/avatar.jpg" />
+
+      <img src="https://yayxs.github.io/avatar.jpg" />
+
+      <img src="https://yayxs.github.io/avatar.jpg" /> -->
+    </div>
+  </body>
+</html>
