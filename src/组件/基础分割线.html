@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      hr {
+        margin-bottom: 60px;
+      }
+      div hr:first-of-type {
+        border: 0;
+        border-top: 1px solid #d0d0d5;
+      }
+      div hr:nth-of-type(2) {
+        border: 0;
+        border-top: 1px dotted #a2a9b6;
+      }
+      div hr:nth-of-type(3) {
+        border: 0;
+        border-top: 3px dotted #a2a9b6;
+      }
+      div hr:nth-of-type(4) {
+        border: 0;
+        border-top: 3px double #a2a9b6;
+      }
+      div hr:nth-of-type(5) {
+        border: 0;
+        padding-top: 1px;
+        background: linear-gradient(
+          to right,
+          transparent,
+          #d0d0d5,
+          transparent
+        );
+      }
+      div hr:nth-of-type(6) {
+        border: 0;
+        padding-top: 10px;
+        color: #d0d0d5;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0 10px 10px -10px;
+      }
+      div hr:nth-of-type(7) {
+        color: pink;
+        border: 0;
+        font-size: 12px;
+        padding: 1em 0;
+        position: relative;
+      }
+      div hr:nth-of-type(7)::before {
+        content: attr(data-content);
+        position: absolute;
+        padding: 0 1ch;
+        line-height: 1px;
+        border: solid #d0d0d5;
+        border-width: 0 99vw;
+        width: fit-content;
+        white-space: nowrap;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr data-content="分割线" />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+    </div>
+  </body>
+</html>
