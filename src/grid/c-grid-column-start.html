@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="color.css" />
+    <style>
+      .container {
+        margin: 10px auto;
+        width: 200px;
+        height: 200px;
+        display: grid;
+        grid-template-columns: [第一根纵线] 80px [纵线2] auto [纵线3] 100px [最后的结束线];
+        grid-template-rows: [第一行开始] 25% [第一行结束] 100px [行3] auto [行末];
+      }
+      .item-a {
+        /* 左侧起 number 是2的线 */
+        grid-column-start: 2;
+        /* 结束于 name 是纵线3 */
+        grid-column-end: 纵线3;
+        /* 上边开始于 name 第一行开始 */
+        grid-row-start: 第一行开始;
+        /* 下边结束为 number 为 3的线 */
+        grid-row-end: 3;
+      }
+      .item-b {
+        grid-column-start: 2;
+        grid-column-end: span 纵线3;
+        grid-row-start: 第一行开始;
+        grid-row-end: span 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item one"></div>
+      <div class="item two"></div>
+      <div class="item three"></div>
+      <div class="item four"></div>
+      <div class="item five"></div>
+      <div class="item six"></div>
+      <div class="item qi"></div>
+      <div class="item ba"></div>
+      <div class="item jiu"></div>
+    </div>
+  </body>
+</html>

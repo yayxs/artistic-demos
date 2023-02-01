@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>网格划分区域</title>
+    <link rel="stylesheet" href="color.css" />
+    <style>
+      .item-header {
+        grid-area: header;
+      }
+      .item-main {
+        grid-area: main;
+      }
+      .item-sidebar {
+        grid-area: sidebar;
+      }
+      .item-footer {
+        grid-area: footer;
+      }
+      .container {
+        display: grid;
+        margin: 10px auto;
+        width: 500px;
+        height: 300px;
+        border: 4px solid #eee;
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-template-rows: auto;
+        grid-template-areas:
+          "header header header header"
+          "main main . sidebar"
+          "footer footer footer footer";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item one item-header"></div>
+      <div class="item one item-header"></div>
+      <div class="item one item-header"></div>
+      <div class="item one item-header"></div>
+      <div class="item two item-main"></div>
+      <div class="item two item-main"></div>
+      <div class="item empty"></div>
+      <div class="item three item-sidebar"></div>
+      <div class="item four item-footer"></div>
+      <div class="item four item-footer"></div>
+      <div class="item four item-footer"></div>
+      <div class="item four item-footer"></div>
+    </div>
+  </body>
+</html>

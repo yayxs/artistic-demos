@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 5em 100px 30%;
+        grid-template-rows: 200px auto;
+        background-color: #eee;
+        gap: 10px;
+        max-width: 30rem;
+        padding: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <article class="flow">
+          <h1>A simple grid</h1>
+          <figure>
+            <p>tip tip</p>
+          </figure>
+          <div class="container" id="container">
+            <div class="box">item one</div>
+            <div class="box">item two</div>
+            <div class="box">item three</div>
+            <div class="box">item four</div>
+            <div class="box">item five</div>
+          </div>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

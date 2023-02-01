@@ -1,0 +1,46 @@
+.one {
+  background-color: #05ffb0;
+}
+.one .one-card {
+  width: 20px;
+  height: 40px;
+  background-color: #eee;
+}
+.two {
+  background-color: #00e7eb;
+}
+.two .two-card {
+  width: 40px;
+  height: 30px;
+  background-color: #eee;
+}
+.three {
+  background-color: #ff3860;
+}
+.three .three-card {
+  width: 30px;
+  height: 10px;
+  background-color: #eee;
+}
+.four {
+  background-color: #ffdd57;
+}
+.four .four-card {
+  width: 14px;
+  height: 22px;
+  background-color: #eee;
+}
+.five {
+  background-color: #ff470f;
+}
+.six {
+  background-color: #b86bff;
+}
+
+.container {
+  width: 400px;
+  height: 200px;
+  border: 2px solid #eee;
+  display: grid;
+  margin: 10px auto;
+}

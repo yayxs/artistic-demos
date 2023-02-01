@@ -2,7 +2,6 @@
   "name": "css-learn",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,8 +16,5 @@
     "url": "https://github.com/yayxs/css-learn/issues"
   },
   "homepage": "https://github.com/yayxs/css-learn#readme",
-  "devDependencies": {
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^22.0.0"
-  }
+  "devDependencies": {}
 }

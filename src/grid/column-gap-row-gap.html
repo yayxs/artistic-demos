@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid-area</title>
+    <link rel="stylesheet" href="common.css" />
+    <style>
+      .wrap {
+        /* 列网格中间的间隙 */
+        column-gap: 20px;
+        /* 行网格间的间隙 */
+        row-gap: 10px;
+      }
+      .wrap1 {
+        /* 设置行 */
+        grid-template-rows: 1fr 2fr;
+        /* 行之间的间隔 */
+        row-gap: 15px;
+        /* 设置列 */
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+      }
+      .wrap2 {
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: 2fr 1fr;
+        /* 和上述的效果一致 */
+        gap: 15px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container wrap">
+      <div class="item one"></div>
+      <div class="item two"></div>
+      <div class="item three"></div>
+      <div class="item four"></div>
+      <div class="item five"></div>
+      <div class="item six"></div>
+    </div>
+    <div class="container wrap1">
+      <div class="item one"></div>
+      <div class="item two"></div>
+      <div class="item three"></div>
+      <div class="item four"></div>
+    </div>
+    <div class="container wrap2">
+      <div class="item one"></div>
+      <div class="item two"></div>
+      <div class="item three"></div>
+      <div class="item four"></div>
+    </div>
+  </body>
+</html>
