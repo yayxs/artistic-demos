@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>上中下全屏布局</title>
+    <style>
+      .top-center-bottom {
+        position: relative;
+      }
+      header,
+      footer,
+      main {
+        position: absolute;
+        left: 0;
+        right: 0;
+      }
+      header {
+        top: 0;
+        height: 50px;
+        border-bottom: 1px solid #eee;
+      }
+      footer {
+        bottom: 0;
+        height: 50px;
+        border-top: 1px solid #eee;
+      }
+      main {
+        top: 50px;
+        bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-center-bottom">
+      <header></header>
+      <main></main>
+      <footer></footer>
+    </div>
+  </body>
+</html>

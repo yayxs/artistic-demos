@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li {
+        --angle: calc(var(--index) / var(--count) * 1turn);
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: #3c9;
+        filter: hue-rotate(var(--angle));
+      }
+      li.star {
+        clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <li class="star" style="--index: 0"></li>
+  </body>
+</html>
