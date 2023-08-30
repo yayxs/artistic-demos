@@ -1,0 +1,23 @@
+.css-tricks-box {
+  height: 100px;
+}
+
+.default {
+  background-image: linear-gradient(red, #f06d06);
+}
+.to-right {
+  background-image: linear-gradient(to right, blue, #f06d06);
+}
+.to-top-right {
+  background-image: linear-gradient(to right, blue, red);
+}
+
+.full {
+  background-image: linear-gradient(
+    to right,
+    red,
+    #f06d06,
+    rgb(255, 255, 0),
+    green
+  );
+}

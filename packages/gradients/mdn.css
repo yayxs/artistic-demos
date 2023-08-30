@@ -1,0 +1,7 @@
+.box {
+  width: 100px;
+  height: 50px;
+}
+.box-1 {
+  background: linear-gradient(45deg, blue, red);
+}
