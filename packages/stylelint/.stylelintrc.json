@@ -1,0 +1,21 @@
+{ 
+  "plugins": [
+		"stylelint-order",
+    "stylelint-csstree-validator"
+	],
+    "extends" : [ 
+      "stylelint-config-standard",
+      "stylelint-config-prettier" 
+    ],
+    "rules": {
+      "order/order": [
+        "custom-properties",
+        "declarations"
+      ],
+      "order/properties-order": [
+        "width",
+        "height"
+      ],
+      "csstree/validator": true
+    }
+}

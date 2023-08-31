@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Tab</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .vh-1 {
+        /* height: 1vh; */
+        width: 1vw;
+        height: 1vh;
+        background-color: #eee;
+      }
+      .rem-10 {
+        /* 750px */
+        width: 10rem;
+        height: 20px;
+        background-color: #cecece;
+      }
+      html {
+        /* font-size: 75px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rem-10"></div>
+    <script>
+      // 1rem 16px 10rem  160px
+      // 750px / 100
+      // 1a = 7.5px
+      // 1rem = 75px (10a)
+      // 宽度是 10rem
+      // font-size 75px
+
+      (function flexible(window, document, printLog) {
+        if (printLog) {
+          console.log("window", window);
+          console.log("document", document);
+        }
+        const htmlEle = document.documentElement; // html元素
+        console.log("获取html元素");
+        const dpr = window.devicePixelRatio;
+        console.log("物理像素分辨率/css像素分辨率", dpr);
+      })(window, document, false);
+    </script>
+  </body>
+</html>

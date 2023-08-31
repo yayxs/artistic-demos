@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        inline-size: 30vw;
+        padding: 1rem;
+        gap: 1rem;
+        background-color: #fff;
+        border: 3px solid #88978a;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .item {
+        background-color: #e8f0fe;
+        border: 2px solid #2938e9;
+        border-radius: 4px;
+        padding: 1rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        inline-size: 180px;
+        aspect-ratio: 1;
+      }
+      .item:nth-child(2) {
+        background-color: #efe1ff;
+      }
+
+      .item:nth-child(3) {
+        background-color: #bbd7af;
+      }
+
+      .item:nth-child(4) {
+        background-color: #ecbbbb;
+      }
+
+      .item:nth-child(5) {
+        background-color: #00f0ff;
+      }
+
+      .item:nth-child(6) {
+        background-color: #d7af0a;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 溢出之前先把项目缩小到最小 -->
+    <div class="container">
+      <div class="item">11</div>
+      <div class="item">2222222222222</div>
+      <div class="item">333333333333333</div>
+      <div class="item">44444444444444</div>
+      <div class="item">4555555555555</div>
+      <div class="item">6666666666666666</div>
+    </div>
+    <script>
+      console.log(getComputedStyle(document.body).flexGrow); // 0
+      console.log(getComputedStyle(document.body).flexShrink); // 1
+      console.log(getComputedStyle(document.body).flexBasis); // auto
+    </script>
+  </body>
+</html>

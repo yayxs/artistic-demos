@@ -1,0 +1,33 @@
+{
+  "name": "css-learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yayxs/css-learn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yayxs/css-learn/issues"
+  },
+  "homepage": "https://github.com/yayxs/css-learn#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "2.5.1",
+    "stylelint": "^14.2.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-csstree-validator": "^2.0.0",
+    "stylelint-order": "^5.0.0"
+  }
+}
