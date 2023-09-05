@@ -44,24 +44,6 @@ body {
 
 ![](https://cdn.jsdelivr.net/gh/yayxs/Pics/dontKownJS/Snipaste_2020-11-28_19-52-47.png)
 
-### 阴影 box-shadow
-
-```css
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.box {
-  width: 100px;
-  height: 100px;
-  /* x y r 颜色 */
-  box-shadow: 10px 2px 6px red, -10px 4px 5px green;
-}
-```
-
-![](https://cdn.jsdelivr.net/gh/yayxs/Pics/dontKownJS/Snipaste_2020-11-28_20-01-15.png)
-
 ### 阴影 text-shadow
 
 ```css

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box shadow</title>
+    <link rel="stylesheet" href="./index.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 80px;
+        height: 30px;
+        background-color: #4e9ec5;
+        color: #fff;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 20px;
+        /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+        box-shadow: 10px 10px 10px 1px #4e9ec5;
+      }
+      .box-1 {
+        width: 100px;
+        height: 50px;
+        background-color: #444;
+        /* 正值框的右侧 正数盒子的下方 数组越大越模糊 */
+        box-shadow: 40px 10px 0;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+      }
+      .area {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      div:nth-child(1) {
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      }
+      div:nth-child(2) {
+        box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
+      }
+      div:nth-child(3) {
+        box-shadow: 0 0 5px 5px red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box-shadow-container">
+      <div class="item item-0"></div>
+    </div> -->
+    <section class="area">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+  </body>
+</html>

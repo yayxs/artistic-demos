@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container-1 {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-rows: minmax(100px, auto);
+        grid-template-columns: minmax(auto, 50%) 1fr 3rem;
+      }
+      .box {
+        background-color: #444;
+        color: #fff;
+        font-size: 150%;
+      }
+      .wrap {
+        margin-bottom: 40px;
+      }
+      .container-2 {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 3rem 25% 1fr 2fr;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-1">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">
+        44. This it4. This item has more content than the others and is
+        intentionally, unnecessarily, superfluously, uselessly, and annoyingly
+        verbose for the sake of example. This item has more content than the
+        others and is intentionally, unnecessarily, superfluously, uselessly,
+        and annoyingly verbose for the sake of example. This item has more
+        content than the others and is intentionally, unnecessarily,
+        superfluously, uselessly, and annoyingly verbose for the sake of
+        example.em has more content than the others and is intentionally,
+        unnecessarily, superfluously, uselessly, and annoyingly verbose for the
+        sake of example. This item has more content than the others and is
+        intentionally, unnecessarily, superfluously, uselessly, and annoyingly
+        verbose for the sake of example. This item has more content than the
+        others and is intentionally, unnecessarily, superfluously, uselessly,
+        and annoyingly verbose for the sake of example.
+      </div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+      }
+      .line-based-box {
+        display: grid;
+        border: 1px dashed #f36;
+        grid-template-columns: 100px 100px 100px;
+        grid-gap: 10px;
+      }
+      .box {
+        background-color: #444;
+        color: #fff;
+        font-size: 150%;
+      }
+      .a {
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="line-based-box">
+      <div class="box a">A</div>
+      <div class="box b">B</div>
+      <div class="box c">C</div>
+      <div class="box d">D</div>
+      <div class="box e">E</div>
+      <div class="box f">F</div>
+    </div>
+  </body>
+</html>

@@ -3,29 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>flex 水平垂直居中</title>
+    <title>双飞翼布局左中右三列布局</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+      header,
+      footer {
+        width: 100%;
+        height: 50px;
+        background-color: #ccc;
+      }
+      .container {
+      }
+      #center_inbox {
+        margin-right: 210px;
+        margin-left: 110px;
+      }
+      .container .center {
+        width: 100%;
+        height: 200px;
+        float: left;
+        background-color: thistle;
+      }
+      .container .left {
+        width: 100px;
+        height: 200px;
+        background-color: teal;
+        float: left;
+        margin-left: -100%;
+      }
+      .container .right {
+        width: 200px;
+        height: 200px;
+        float: left;
+        background-color: tan;
+        margin-left: -200px;
       }
     </style>
   </head>
   <body>
-    <div class="container container--one">
-      <img
-        src="https://p9-passport.byteacctimg.com/img/user-avatar/b9f508574cd03f223f44ee3518e77351~40x40.awebp"
-        alt=""
-      />
-    </div>
-    <div class="container container--mul">
-      <img
-        src="https://p9-passport.byteacctimg.com/img/user-avatar/b9f508574cd03f223f44ee3518e77351~40x40.awebp"
-        alt=""
-      />
-      <h3>h3h3h3h3h33h</h3>
-      <p>ppppppppppppppppppppp</p>
-    </div>
+    <header></header>
+    <main class="container">
+      <section class="center">
+        <div id="center_inbox">中间自适应</div>
+      </section>
+      <section class="left"></section>
+      <section class="right"></section>
+    </main>
+    <footer></footer>
   </body>
 </html>

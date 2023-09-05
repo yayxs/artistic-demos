@@ -1,0 +1,6 @@
+{
+  "name": "@css/reset",
+  "scripts": {
+    "dev": "vite"
+  }
+}

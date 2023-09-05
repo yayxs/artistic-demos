@@ -1,0 +1,89 @@
+body {
+  /* width: 100vw; */
+  font-family: "Exo";
+  background-color: #ececec;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #fff;
+}
+
+.form label {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.form select {
+  font-size: inherit;
+  min-width: 16px;
+}
+
+:root {
+  --display: grid;
+}
+.container {
+  background-color: #fff;
+  display: var(--display);
+  /* margin: 1rem auto; */
+}
+
+.item {
+  background-color: #058fff;
+}
+
+/* .container::after {
+  content: "After w伪元素";
+  border: 2px solid #2938e9;
+  border-radius: 4px;
+  color: #000;
+} */
+
+.item:nth-child(2) {
+  background-color: #efe1ff;
+}
+
+.item:nth-child(3) {
+  background-color: #bbd7af;
+}
+
+.gird__container {
+  border: 1px dashed #f36;
+  box-shadow: 0 0 0 6px rgb(0 0 0 / 13%);
+  border-radius: 1px;
+  display: var(--display);
+  gap: 10px;
+}
+
+.gird__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #058fff;
+  color: #000;
+  font-size: 2rem;
+}
+.gap-line {
+  margin-bottom: 20px;
+}
+.grid__item:nth-child(1) {
+  background-color: #f1c2c6;
+}
+
+.grid__item:nth-child(2) {
+  background-color: #efe1ff;
+}
+.grid__item:nth-child(4) {
+  background-color: #209fbb;
+}
+
+.grid__item:nth-child(5) {
+  background-color: #00f0ff;
+}
+
+.item:nth-child(6) {
+  background-color: #cefaf0;
+}

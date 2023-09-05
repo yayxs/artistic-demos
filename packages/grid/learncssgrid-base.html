@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>learncssgrid.com</title>
+
+    <style>
+      .container-1 {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-rows: 50px 100px;
+        grid-template-columns: 90px 50px 120px;
+
+        /* border: 2px solid #eee;
+        width: 400px;
+        height: 340px;
+        margin: 10px auto;
+        justify-items: start; */
+      }
+      .box {
+        background-color: #444;
+        color: #fff;
+        font-size: 150%;
+      }
+      .wrap {
+        margin-bottom: 40px;
+      }
+      .container-2 {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 3rem 25% 1fr 2fr;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap container-1">
+      <div class="box a">1</div>
+      <div class="box b">2</div>
+      <div class="box c">3</div>
+      <div class="box d">4</div>
+      <div class="box e">5</div>
+      <div class="box f">6</div>
+
+      <!-- <div class="item four"></div>
+      <div class="item five"></div>
+      <div class="item six"></div>
+      <div class="item qi"></div>
+      <div class="item ba"></div>
+      <div class="item jiu"></div> -->
+    </div>
+
+    <div class="wrap container-2">
+      <div class="box a">1</div>
+      <div class="box b">2</div>
+      <div class="box c">3</div>
+      <div class="box d">4</div>
+      <!-- <div class="box e">5</div>
+      <div class="box f">6</div> -->
+    </div>
+  </body>
+</html>

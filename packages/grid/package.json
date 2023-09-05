@@ -1,0 +1,9 @@
+{
+  "name": "@css/grid",
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@css/reset": "workspace:*"
+  }
+}
