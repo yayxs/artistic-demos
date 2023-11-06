@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 基础盒子 */
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      /* 线性渐变 */
+      .box-1 {
+        background: linear-gradient(#fff, #000);
+      }
+      /* 径向渐变 */
+      .box-2 {
+        background: radial-gradient(#fff, #000);
+      }
+      /* 角向渐变 */
+      .box-3 {
+        background: conic-gradient(#fff, #000);
+      }
+      /* 从白色到透明 */
+      .box-4 {
+        background: linear-gradient(#fff, transparent);
+      }
+      .box-4-wrap {
+        background-color: #0f182b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box-1"></div>
+    <div class="box box-2"></div>
+    <div class="box box-3"></div>
+    <div class="box-4-wrap">
+      <div class="box box-4"></div>
+    </div>
+  </body>
+</html>

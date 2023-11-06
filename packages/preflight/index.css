@@ -1,0 +1,6 @@
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  color: pink;
+}

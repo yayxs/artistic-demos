@@ -2,7 +2,9 @@
   "name": "css-learn",
   "version": "0.0.1",
   "description": "",
-  "scripts": {},
+  "scripts": {
+    "dev": "astro dev"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yayxs/css-learn.git"
@@ -17,6 +19,15 @@
   },
   "homepage": "https://github.com/yayxs/css-learn#readme",
   "devDependencies": {
-    "vite": "^4.4.9"
+    "prettier": "2.5.1",
+    "prettier-plugin-tailwindcss": "^0.5.4",
+    "sass": "^1.69.5",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^24.0.0",
+    "unocss": "^0.57.1",
+    "vite": "^4.5.0"
+  },
+  "dependencies": {
+    "astro": "^3.4.3"
   }
 }

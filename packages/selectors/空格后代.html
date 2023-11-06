@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .pink p {
+        color: pink;
+      }
+      .red p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="id-1">
+      <div class="name">div-1</div>
+      <div class="info">
+        <div class="desc">div-2-1</div>
+      </div>
+    </div>
+    <div class="pink">
+      <div class="red">
+        <p>div-div-p</p>
+      </div>
+    </div>
+    <div class="red">
+      <div class="pink">
+        <p>div-div-p</p>
+      </div>
+    </div>
+
+    <script>
+      console.log(document.querySelectorAll('#id-1 div div').length)
+      console.log(document.querySelectorAll('div div'))
+    </script>
+  </body>
+</html>

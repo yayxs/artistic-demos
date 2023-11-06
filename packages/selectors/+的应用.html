@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .cs-tips {
+        color: gray;
+        margin-left: 15px;
+        position: absolute;
+        visibility: hidden;
+      }
+      :focus + .cs-tips {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    用户名：
+    <input type="text" /> <span class="cs-tips"> 显示</span>
+  </body>
+</html>

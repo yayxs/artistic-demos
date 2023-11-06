@@ -1,0 +1,17 @@
+{
+  "name": "windicss-vite-starter",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "vanlee",
+  "devDependencies": {
+    "vite-plugin-windicss": "^1.8.8",
+    "windicss": "^3.5.6"
+  },
+  "dependencies": {
+    "vite": "^3.1.8"
+  }
+}

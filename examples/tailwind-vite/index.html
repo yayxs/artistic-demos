@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        extend: {
+          colors: {},
+        },
+      };
+    </script>
+
+    <style>
+      .chat-noti{
+        display: flex;
+        max-width: 24rem;
+        margin: 0 auto;
+        padding: 1.5rem;
+        border-radius: .5rem;
+        background-color: #fff;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .chat-noti-logo-wrapper{
+        flex-shrink:0
+      }
+      .chat-notification-logo{
+        width: 3rem;
+        height: 3rem;
+      }
+      .chat-noti-cont{
+        margin-left: 1.5rem;
+        padding-top: 0.25rem;
+      }
+      .chat-noti-title{
+        color: #1a202c;
+        font-size: 1.25rem;
+        line-height: 1.25;
+      }
+      .chat-noti-message{
+        color: #718096;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <div class="chat-noti">
+      <div class="chat-noti-logo-wrapper">
+        <img class="chat-notification-logo" src="https://tailwindcss.com/img/erin-lindford.jpg" alt="">
+      </div>
+      <div class="chat-noti-cont">
+        <h4 class="chat-noti-title">tip</h4>
+        <h4 class="chat-noti-message">info info info</h4>
+
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container-1 div {
+        color: pink;
+      }
+
+      .container-2 > div {
+        color: brown;
+      }
+
+      button + button {
+        margin-left: 10px;
+      }
+
+      .container-4 button ~ button {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-1">
+      <div>div1</div>
+      <div>div2</div>
+      <div>
+        div3
+        <span>div3span</span>
+      </div>
+      <span>span1</span>
+      <span>
+        <div>spandiv</div>
+      </span>
+    </div>
+
+    <div class="container-2">
+      <div>div1</div>
+      <div>div2</div>
+      <div>
+        div3
+        <span>div3span</span>
+      </div>
+      <span>span1</span>
+      <span>
+        <div>spandiv</div>
+      </span>
+    </div>
+    <div class="container-3">
+      <button>b1</button>
+      <button>b2</button>
+      <button>b3</button>
+    </div>
+    <div class="container-4">
+      <button>b1</button>
+      <button>b2</button>
+      <button>b3</button>
+    </div>
+  </body>
+</html>
