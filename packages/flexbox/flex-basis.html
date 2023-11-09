@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* flex-basis
+      子项目主轴方向上的大小
+      
+      10em
+      3px
+      auto
+
+      fill
+      max-content
+      min-content
+      fit-content
+
+      inherit
+      initial
+      unset
+      */
+      .flex {
+        display: flex;
+      }
+      .flex-row {
+        flex-direction: row;
+      }
+      .h-14 {
+        height: 3.5rem;
+      }
+      .bg-fuchsia-500 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(217 70 239 / var(--tw-bg-opacity));
+      }
+      .basis-1\/4 {
+        flex-basis: 25%;
+      }
+      .basis-1\/2 {
+        flex-basis: 50%;
+      }
+      .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(1rem * var(--tw-space-x-reverse));
+        margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex flex-row space-x-4">
+      <div class="basis-0 h-14 bg-fuchsia-500">01</div>
+      <div class="basis-1/4 h-14 bg-fuchsia-500">02</div>
+      <div class="basis-1/2 h-14 bg-fuchsia-500">03</div>
+    </div>
+  </body>
+</html>

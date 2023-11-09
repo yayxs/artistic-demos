@@ -1,1 +1,10 @@
-{"devDependencies":{"unocss":"^0.55.6"}}
+{
+  "scripts": {
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "@unocss/eslint-config": "^0.57.2",
+    "prettier": "^3.0.3",
+    "unocss": "^0.57.1"
+  }
+}

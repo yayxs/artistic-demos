@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        perspective: 160vmin;
+      }
+      p {
+        font-size: 24vmin;
+        transform-style: preserve-3d;
+        animation: a-name 10s infinite ease-in-out;
+      }
+      @keyframes a-name {
+        0% {
+          transform: rotateY(-45deg);
+        }
+        50% {
+          transform: rotateY(45deg);
+        }
+        100% {
+          transform: rotateY(-45deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- css 3d 变换动画 -->
+    <p>
+      <span>F</span>
+      <span>I</span>
+      <span>L</span>
+      <span>T</span>
+      <span>E</span>
+      <span>R</span>
+    </p>
+  </body>
+</html>

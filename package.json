@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "dev": "astro dev"
+    "dev": "vite"
   },
   "repository": {
     "type": "git",
@@ -26,8 +26,5 @@
     "stylelint-config-standard": "^24.0.0",
     "unocss": "^0.57.1",
     "vite": "^4.5.0"
-  },
-  "dependencies": {
-    "astro": "^3.4.3"
   }
 }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .mt-2 {
+        margin-top: 0.5rem;
+      }
+      .flex {
+        display: flex;
+      }
+      .gap-4 {
+        gap: 1rem;
+      }
+      .text-white {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+      }
+      .text-sm {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+      .rounded-lg {
+        border-radius: 0.5rem;
+      }
+      .p-4 {
+        padding: 1rem;
+      }
+      .flex-none {
+        flex: none;
+      }
+      .w-14 {
+        width: 3.5rem;
+      }
+      .h-14 {
+        height: 3.5rem;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .items-center {
+        align-items: center;
+      }
+
+      .bg-blue-300 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+      }
+      @media (min-width: 640px) {
+        .sm\:w-64 {
+          width: 16rem;
+        }
+      }
+      @media (min-width: 640px) {
+        .sm\:w-32 {
+          width: 8rem;
+        }
+      }
+      .w-24 {
+        width: 6rem;
+      }
+      .w-14 {
+        width: 3.5rem;
+      }
+      .flex-initial {
+        flex: 0 1 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mt-2 flex gap-4 text-white text-sm rounded-lg">
+      <div
+        class="p-4 flex-none w-14 h-14 rounded-lg flex items-center justify-center bg-blue-300 dark:bg-blue-800 dark:text-blue-500"
+      ></div>
+      <div
+        class="p-4 flex-initial w-24 sm:w-64 rounded-lg flex items-center justify-center bg-blue-300 shadow-lg"
+      ></div>
+      <div
+        class="p-4 flex-initial w-24 sm:w-64 rounded-lg flex items-center justify-center bg-blue-300 shadow-lg"
+      ></div>
+    </div>
+  </body>
+</html>

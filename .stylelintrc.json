@@ -1,4 +1,9 @@
 {
-  "rules": {},
+  "rules": {
+    "comment-empty-line-before": "never",
+    "string-quotes": "single",
+    "declaration-block-semicolon-space-before": "never",
+    "at-rule-no-unknown": null
+  },
   "extends": "stylelint-config-standard"
 }
