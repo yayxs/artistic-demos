@@ -1,8 +1,3 @@
 ```sh
-Tailwind CSS
-扫描所有 HTML 文件、JavaScript 组件和任何其他模板的类名
-生成相应的样式
-将它们写入静态 CSS 文件
 
-快速 灵活 可靠
 ```

@@ -1,0 +1,27 @@
+[
+  {
+    "text": "sizing",
+    "link": "/sizing/width/introduction",
+    "activeMatch": "/sizing/"
+  },
+  {
+    "text": "typography",
+    "link": "/typography/font/family",
+    "activeMatch": "/typography/"
+  },
+  {
+    "text": "layout",
+    "link": "/layout/aspect-ratio/introduction",
+    "activeMatch": "/layout/"
+  },
+  {
+    "text": "framework",
+    "link": "/framework/tailwindcss/introduction",
+    "activeMatch": "/framework/"
+  },
+  {
+    "text": "",
+    "link": "/ui/start/introduction",
+    "activeMatch": "/ui/"
+  }
+]
