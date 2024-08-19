@@ -1,0 +1,15 @@
+.popover-trigger {
+  background-color: pink;
+  border-radius: 4px;
+}
+
+.popover-content {
+  border-radius: 4px;
+  padding: 20px;
+  width: 260px;
+  background-color: white;
+}
+
+.popover-arrow {
+  fill: white;
+}

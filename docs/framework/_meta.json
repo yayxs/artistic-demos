@@ -2,6 +2,11 @@
   {
     "type": "dir",
     "name": "tailwindcss",
-    "label": "getting-started"
+    "label": "tailwindcss"
+  },
+  {
+    "type": "dir",
+    "name": "radix",
+    "label": "radix-ui"
   }
 ]

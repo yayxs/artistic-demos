@@ -1,1 +1,78 @@
 # Font Family
+
+## 衬线字体和无衬线字体
+
+web 上的衬线字体和无衬线字体
+
+- 衬线字体 `serif` 宋体
+- 非衬线字体 微软雅黑
+
+## 取值
+
+通用字体族：这些是浏览器预定义的一组字体族，包括：
+
+serif：有衬线字体，如 Times New Roman。
+sans-serif：无衬线字体，如 Arial。
+monospace：等宽字体，如 Courier New。
+cursive：看起来手写的字体，如 Brush Script MT。
+fantasy：装饰性字体，如 Western。
+
+[https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/#generic-font-families](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/#generic-font-families)
+
+字体族名称：可以是字体的具体名称，如 "Helvetica" 或 "Verdana"。
+
+```css
+font-family: Avenir, Helvetica, Arial, sans-serif;
+```
+
+```css
+font-family: system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
+  Helvetica, Arial, sans-serif;
+```
+
+## 字体和字体族`@font-face`
+
+保证字体能够显示，一般情况下不使用中文字体，一个字体找不到接着找来进行渲染，也可以显示自定义的字体（网络字体）
+
+```css
+body {
+  /* 单个的平台独有  多个平台都有 字体族 */
+  font-family: 'aa', 'bbb', // 系统找不到就接着往后找,但是字体族是不加引号的;;
+}
+```
+
+## 自定义的字体
+
+```css
+@font-face {
+  font-family: 'CustomFont'; /* 定义一个字体名称 */
+  src: url('fonts/customfont.woff2') format('woff2'), /* 指定字体文件的路径和格式 */
+      url('fonts/customfont.woff') format('woff'),
+    url('fonts/customfont.ttf') format('truetype'); /* 可以指定多个格式以增加兼容性 */
+  font-weight: normal; /* 字体粗细 */
+  font-style: normal; /* 字体风格 */
+}
+```
+
+## font-sans
+
+<div className="font-sans">
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe
+  UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+</div>
+
+<style>
+  {`
+  .font-sans{
+ font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+ 
+  `}
+</style>
+
+https://learn.microsoft.com/zh-cn/typography/
+
+https://juejin.cn/post/6844903912760147982?searchId=202404240927267C54B937EC69D063BCAE
+
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap");
